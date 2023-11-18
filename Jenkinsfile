@@ -7,4 +7,13 @@ pipeline {
 			}
 		}
 	}
+	        stages {
+                stage ('Build2') {
+                        steps {
+                                sh 'echo "Build Completed"'
+                        }
+                }
+        }
+}
+
 }

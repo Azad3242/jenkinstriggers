@@ -1,5 +1,7 @@
 pipeline {
-	agent silver-node
+	agent {
+	   	label 'silver-node'
+	}
 	tools {
 		maven "MAVEN3"
 		jdk "OracleJDK11"

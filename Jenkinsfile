@@ -16,6 +16,11 @@ pipeline {
         git branch: 'docker', url: 'https://github.com/devopshydclub/vprofile-project.git'
       }
     }
+    stage('Test'){
+      steps {
+        sh 'mvn test'
+      }
+    }
 
     stage ('CODE ANALYSIS WITH CHECKSTYLE'){
             steps {
